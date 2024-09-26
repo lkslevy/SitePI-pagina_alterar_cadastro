@@ -1,0 +1,49 @@
+/*-----CABEÇALHO-----*/
+/*NAVEGADOR*/
+*{
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: flex;
+    background-color: rgba(242, 92, 34, 0.25);
+    height: 130px;
+    font-family: arial;
+    margin: 0;
+    width: 100%;
+    
+}
+
+.navegador {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    margin: 50px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 320px;
+    height: 310px;
+}
+
+.navegadores {
+    display: flex;
+    align-items: center;
+    width: auto;
+
+}
+
+.navegadores a {
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+
+.usuario {
+    color: #F1642E;
+    font-size: 50px;
+}
+

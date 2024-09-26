@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTERAR CADASTRO DE BENEFICIARIO</title>
+    <link rel="stylesheet" href="./header.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <div class="navegador">
+        <img class="logo" src="./img/logo.png" alt="">
+        <nav class="navegadores">
+            <a href="">CADASTRAR</a>
+            <a href="">FREQUÊNCIA</a>
+            <a href="">JUSTIFICATIVA</a>
+            <a href="">ALTERAR</a>
+            <a href="">VOLUNTÁRIO</a>
+            <ion-icon class="usuario" name="person-circle-outline"></ion-icon> <!--Icone pego pelo framework ionicons-->
+        </nav>
+
+    </div>
+</header>
+
+<body>
+    <main>
+        <div class="alterar-cadastrob"><!--DIV principal para formualário-->
+            <form action="">
+                <div class="titulo-AC">
+                    <h2>ALTERAR CADASTRO DE BENEFICIARIO</h2><!--Titulo da pággina-->
+
+                </div>
+                <div class="alt-nome">
+                    <label for="name">NOME COMPLETO:</label>
+                    <input type="text" name="name" id="name"> <!--Formulario par entrar com o nome-->
+                </div>
+                <div class="dados-pessoais"><!--DIV para entrar com os dados pessoais-->
+
+                    <label for="date">DATA DE NASCIMENTO:</label><!--Formulario par entrar com a data de nascimento-->
+                    <input type="date" name="date" id="date">
+
+                    <label for="rg">RG:</label>
+                    <input type="text" name="rg" id="rg"><!--Formulario para entrar com o RG-->
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="CPF" id="cpf"><!--Formulario para entrar com o CPF-->
+                </div>
+
+                <div class="dados-basicos">
+                    <label for="tel">TELEFONE:</label>
+                    <input type="tel" name="tel" id="tel"><!--Formulario para entrar com o número de telefone-->
+
+                    <label for="email">E-Mail:</label>
+                    <input type="email" name="email" id="tel"><!--Formulario para entrar com o E-MAIL-->
+                </div>
+
+                <div class="dados-endereco">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep"><!--Entrada para digitar o cep-->
+
+                    <label for="endereco">ENDEREÇO:</label>
+                    <input type="text" id="endereco" name="endereco">
+
+                </div>
+
+                <div class="dados-moradia"><!--DIV para entar com os dados de moradia-->
+
+
+
+                    <label for="estado">ESTADO:</label>
+                    <select name="estado" id="estado">
+                        <option value="df">DF</option>
+                        <option value="go">GO</option>
+                    </select>
+
+
+                    <label for="cidade">CIDADE:</label><!--Entrada para escolher a Cidade de origem-->
+                    <select name="cidade" id="cidade">
+                        <option value="taguatinga">Taguatinga (DF)</option>
+                        <option value="ceilandia">Ceilândia (DF)</option>
+                        <option value="recanto">Recanto das EMAS (DF)</option>
+                        <option value="samanbaia">Samambaia</option>
+                        <option value="aguas-lindas">Aguas Lindas (GO)</option>
+                        <option value="santo-antonio">Santo Antônio (GO)</option>
+                        <option value="outro">Outro</option>
+                    </select> <!--Fim da entrada para cidade-->
+
+                    <label for="moradia">MORADIA:</label><!--Entrada para tipo de moradia-->
+                    <select name="moradia" id="moradia">
+                        <option value="propria">Propria</option>
+                        <option value="alugada">Alugada</option>
+                        <option value="cedida">Cedida</option>
+                    </select>
+                </div>
+
+                <div class="dados-pcd"><!--INICIO DA CLASSE DADOS PCD-->
+
+
+                    <div class="pcd-select">
+                        <label for="pcd-select">PCD: <!--Entrada para escolher a opção PCD-->
+                            <label for="sim">Sim</label>
+                            <input type="radio" id="sim" name="radio" value="Sim">
+                            <label for="nao">Não</label>
+                            <input type="radio" id="nao" name="radio" value="Não">
+                        </label> <!--botão PCD(SIM ou NÃO)-->
+                    </div>
+
+                    <label for="pcd-tipo">CITE SUA
+                        DEFICIÊNCIA</label><!--Entrada para selecionar o tipo de deficiencia-->
+                    <select name="pcd-tipo" id="pcd-tipo">
+                        <option value="Auditiva">Auditiva</option>
+                        <option value="fisica">Física</option>
+                        <option value="mental">Mental</option>
+                    </select>
+                     <div>
+                    <label for="laudo-select">TEM LAUDO? <!--Entrada para seleção de laudo-->
+                        <label for="sim-laudo">Sim</label>
+                        <input type="radio" id="sim-laudo" name="radio1" value="sim-laudo">
+                        <label for="nao-laudo">Não</label>
+                        <input type="radio" id="nao-laudo" name="radio1" value="nao-laudo">
+                    </label>
+                </div>
+
+                <div>
+
+                    <div class="beneficio-select">
+                        <label for="beneficio-select">TEM BENEFÍCIO?<!--Entrada para seleção de benefício-->
+                            <label for="sim-beneficio">Sim</label>
+                            <input type="radio" id="sim-beneficio" name="radio2" value="sim-beneficio">
+                            <label for="nao-beneficio">Não</label>
+                            <input type="radio" id="nao-beneficio" name="radio2" value="nao-beneficio">
+                        </label>
+
+
+                        <label for="qual-beneficio">Qual?</label><!--Seleção para tipo de beneficio -->
+                        <select name="qual-beneficio" id="qual-beneficio">
+                            <option value="bolsa-familia">BOLSA FAMILIA</option>
+                            <option value="aposentaria">APOSENTADORIA</option>
+                            <option value="bpc">BPC</option>
+                        </select>
+                    </div>
+                    <div class="renda-select">
+
+                        <label for="renda-familiar">RENDA FAMILIAR TOTAL:</label>
+                        <input type="text" id="renda-familiar" name="renda-familiar">
+                    </div>
+
+
+                    <button>Alterar</button>
+
+            </form>
+        </div>
+    </main>
+
+
+
+</body>
+
+</html>

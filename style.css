@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    
+}
+
+/*alterar opções do formulario*/
+.alterar-cadastrob form {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+      margin-right: 400px;
+ 
+
+    
+
+}
+
+
+/*Alterar titulo*/
+.alterar-cadastrob h2 {
+    color: #F1642E;
+    text-align: center;
+    padding: 80px;
+    width: 350px;
+    margin-left: 60px;
+    font-size: 32px;
+
+
+}
+/*Alterar congfigs da caixa*/
+.alterar-cadastrob input{
+    border: 1px solid #F1642E;/*alterar cor da caixa*/
+    outline: #F1642E;/*manter a cor da caixa quando selecionado*/
+    
+     
+}
+
+/*alterar DIV principal*/
+.alterar-cadastrob select{
+    border: 1px solid #F1642E;
+}
+
+
+
+.alt-nome label {
+    line-height: 5ch;
+
+}
+
+.alt-nome input {
+    width: 250px;
+}
+
+/*Configurar DIV DADOS PESSOAIS*/
+.dados-pessoais label {
+    display: inline;
+    margin: auto;
+    line-height: 5ch;
+}
+
+.dados-basicos label {
+    display: inline-block;
+    line-height: 5ch;
+}
+
+.dados-endereco label{
+    line-height: 5ch;
+    
+}
+
+/*Configurar DIV DADOS MORADIA*/
+.dados-moradia label{
+    margin: 5px;
+line-height: 5ch;
+   }
+
+
+
+
+/*configurar a DIV DADOS PCD*/
+.dados-pcd label{
+    display: inline;
+    line-height: 5ch;
+    padding: 5px;
+   
+}
+.dados-pcd select{
+display: inline;
+
+
+}
+.beneficio-select label{
+    margin: 2px;
+    line-height: 5ch;
+}
+
+.renda-select label{
+    line-height: 5ch;
+    
+    
+}
+.alterar-cadastrob button{
+    background-color: black;
+    color: white;
+    width: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-left: 800px;
+    width: 100px;
+    height: 40px;
+}
